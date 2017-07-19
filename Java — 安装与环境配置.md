@@ -4,8 +4,9 @@
 
    ##### JDK（Java Development ToolKit）指的就是 Java 开发工具套装。它不但包涵了 JRE（jre文件夹下），还包括了编译器（javac.exe）、从源码注释中提取文档的文档生成器（javadoc.exe）、将相关的类文件打包成一个文件的打包工具（jar.exe）、性能跟踪工具（jconsole.exe）以及更多的类库（如 dt.jar、tools.jar）。JDK 提供的是一套完整的 Java 编译和运行环境，可以用于开发。
 
-  ![JDK结构](Timer.png)
-  ![JRE&JDK关系](Timer.png)
+  ![JDK结构](https://github.com/StRothschild/Back-End/blob/master/resource/Java%20%E2%80%94%20JDK%20%E7%BB%93%E6%9E%84.png?raw=true)
+  
+  ![JRE&JDK关系](https://github.com/StRothschild/Back-End/blob/master/resource/Java%20%E2%80%94%20JRE&JDK.jpg?raw=true)
 
 
 
