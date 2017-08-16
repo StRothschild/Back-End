@@ -9,9 +9,29 @@
 - #### Java 是编译执行， JavaScript 是解释执行
 
 
+
 ---
 - #### Java 方法的参数数量必须和定义时的完全匹配， JavaScript 方法的参数数量不必完全匹配（默认为 null）
 
+
+
+
+---
+- #### 两者的变量默认值不同
+```
+/* Java 中的变量默认值 */
+Byte、Short、Int、Long      // 0
+Float f;                   // 0.0f
+Double d;                  // 0.0d
+Char c;                    // "" 或者 /u0000
+Boolean b;                 // false
+int[] a;                   // null
+引用类型                    // null
+
+
+/* JavaScript 中的变量默认值 */
+所有 JavaScript 中的变量，默认值都为 undefined。
+```
 
 
 
