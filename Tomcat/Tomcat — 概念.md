@@ -9,9 +9,6 @@
 
 
 
-
-
-
 ---
 - #### 三种 Connector
 
@@ -20,3 +17,12 @@
   ##### AJP Connector
 
   http://blog.csdn.net/u010297957/article/details/50782212
+
+
+
+
+---
+- ####  Tomcat 配置 URL 访问地址
+http://blog.csdn.net/qq_33189295/article/details/50513935
+http://www.linuxidc.com/Linux/2011-12/48939.htm
+https://www.zhihu.com/question/54757013
