@@ -35,3 +35,57 @@
   ```
 
   ```
+
+
+
+---
+- #### Maven 属性
+  ```
+  /* Maven 的内置属性，可以在 POM 中直接使用 */
+  ${basedir} 和 ${project.basedir} 表示项目根目录，即包含pom.xml文件的目录;
+  ${version} 和 {project.version} 表示项目版本;
+  ${project.baseUri} 表示项目文件地址;
+  ${maven.build.timestamp} 表示项目构件开始时间;
+  ${maven.build.timestamp.format} 表示属性 ${maven.build.timestamp} 的展示格式，默认值为 yyyyMMdd-HHmm
+
+
+
+  /* POM 文件属性 */
+  ${project.build.directory} 表示主源码路径;
+  ${project.build.sourceDirectory} 表示主源码路径;
+  ${project.build.sourceEncoding} 表示主源码的编码格式;
+  ${project.build.finalName} 表示输出文件名称;
+
+
+
+  /* settings 文件属性 */
+  与 POM 属性同理，可以引用 settings.xml 文件中的XML元素值
+  ${settings.localRepository} 表示本地仓库的地址;
+
+
+
+  /* 自定义属性 */
+  在 POM 文件的 <properties> 标签下也可以定义 Maven 属性
+  <project>
+    <properties>
+      <test>test</test>
+    </properties>
+  </project>
+  通过以上设置，就可以在其他地方使用 ${test} 引用该属性
+
+
+
+
+  /* Java 系统属性 */
+  所有的 Java 系统属性都可以使用 Maven 属性引用，使用 mvn help:system 命令可查看所有的 Java 系统属性，System.getProperties()可得到所有的Java属性;
+  ${user.home} 表示用户目录;
+
+
+
+
+  /* 环境变量属性 */
+  使用 mvn help:system命令可查看所有环境变量
+  ${env.JAVA_HOME} 表示 JAVA_HOME 环境变量的值;
+  ```
+
+http://www.cnblogs.com/xdouby/p/6502925.html
