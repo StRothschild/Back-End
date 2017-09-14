@@ -112,3 +112,21 @@
   使用 mvn help:system命令可查看所有环境变量
   ${env.JAVA_HOME} 表示 JAVA_HOME 环境变量的值;
   ```
+
+
+
+
+
+
+---
+- #### POM 中的 exclusions
+  ##### 由于 Maven 会根据依赖自动加载依赖的依赖，实现了依赖的自动管理。但有些时候会引入同一依赖的不同版本，这可能会造成了包冲突而导致编译失败。这时就可以通过 exclusions 的设置来避免某些依赖的加载。
+  ```
+  /* 通过以下方式可以避免 */
+  <exclusions>
+      <exclusion>
+          <groupId>javassist</groupId>
+          <artifactId>javassist</artifactId>
+      </exclusion>
+  <exclusions>
+  ```
