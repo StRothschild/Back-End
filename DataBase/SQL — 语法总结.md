@@ -17,3 +17,9 @@ SELECT *
 FROM A a
 GROUP BY a.Id;
 ```
+
+
+
+---
+#### DISTINCT & GROUP BY
+##### DISTINCT 和 GROUP BY 一样有去重的效果。但相比之下 GROUP BY 的效率更高，一般使用 GROUP BY。
