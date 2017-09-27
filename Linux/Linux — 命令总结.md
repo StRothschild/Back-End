@@ -1,6 +1,15 @@
 ## Linux 命令总结
 
 ---
+- #### 查看文件内容
+  ##### cat filePath
+  ```
+    cat /etc/issue     // 查看服务器系统的发型版本
+  ```
+
+
+
+---
 - #### 实时查看文件打印
   ##### tail -f filePath
 
