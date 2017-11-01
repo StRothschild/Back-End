@@ -1,4 +1,12 @@
 ## SQL 语法总计
+#### COUNT
+##### COUNT(column_name) 函数返回指定列的值的数目，但是不包含 null 值。
+##### COUNT(*) 与 COUNT(1)包含 null 值。
+##### 通常情况下 COUNT(*) 会扫描所有列，而 COUNT(1)只扫描第一列，所以一般 COUNT(1) 的效率高。
+
+
+
+---
 #### LEFT JOIN ... ON ...
 ##### LEFT JOIN 关键字会从右表那里返回所有的行并合入左表中
 ```SQL
