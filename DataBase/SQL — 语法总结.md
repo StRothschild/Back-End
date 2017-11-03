@@ -50,3 +50,16 @@
 ---
 - #### DISTINCT & GROUP BY
   ##### DISTINCT 和 GROUP BY 一样有去重的效果。但相比之下 GROUP BY 的效率更高，一般使用 GROUP BY。
+  
+  
+  
+  
+---
+- #### ORDER BY
+  ##### ORDER BY  语句用于对结果集进行排序
+  ```SQL
+  SELECT *
+  FROM A a
+  ORDER BY a.Id;
+  ```
+
