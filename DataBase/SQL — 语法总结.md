@@ -8,7 +8,7 @@
 
 ---
 - #### LEFT JOIN ... ON ...
-  ##### LEFT JOIN 关键字会从右表那里返回所有的行并合入左表中
+  ##### LEFT JOIN 关键字会从右表那里返回和左表相同行数的所有列，并合入左表中。注意，如果某行的 on 条件不符合，则右表返回的值均为 null。
   ```SQL
   SELECT *
   FROM RightTable r
@@ -50,10 +50,10 @@
 ---
 - #### DISTINCT & GROUP BY
   ##### DISTINCT 和 GROUP BY 一样有去重的效果。但相比之下 GROUP BY 的效率更高，一般使用 GROUP BY。
-  
-  
-  
-  
+
+
+
+
 ---
 - #### ORDER BY
   ##### ORDER BY  语句用于对结果集进行排序
@@ -62,4 +62,3 @@
   FROM A a
   ORDER BY a.Id;
   ```
-
