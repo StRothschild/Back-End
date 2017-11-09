@@ -9,7 +9,8 @@
 ---
 - #### LEFT JOIN ... ON ...
   ##### LEFT JOIN 关键字会从右表那里返回和左表相同行数的所有列，并合入左表中。注意，如果某行的 on 条件不符合，则右表返回的值均为 null。
-  ```SQL
+  ##### LEFT JOIN 对性能的消耗较大
+  ```SQL
   SELECT *
   FROM RightTable r
   LEFT JOIN LeftTable l ON r.Id = l.Id;
