@@ -12,3 +12,12 @@
   假设 foo = test
   select * $foo$;   =>  select * from test; （注意此处只能用 $, 如果用 # 会引入单引号造成语法错误）
   ```
+
+
+- #### 常见错误汇总
+  ```XML
+  提示： You have an error in your SQL syntax; check the manual
+        that corresponds to your MySQL server version for the
+        right syntax to use near
+  原因： 在提示的错误语句之前有漏逗号。
+  ```
