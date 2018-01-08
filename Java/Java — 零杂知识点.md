@@ -3,10 +3,10 @@
 - #### Java 判空
   ```java
   /* 判断是否为空字符串 */
-  !"".equals(foo)    // "" 写前面可以避免 foo 为 null 时出现的 bug
+  "".equals(foo)    // "" 写前面可以避免 foo 为 null 时出现的 bug
 
   /* 判断是否为 null */
-  null != foo 或 foo != null
+  null == foo 或 foo == null  // 建议用前者，万一少写一个等于号时，前者会报错，可以及时发现
   ```
 
 
