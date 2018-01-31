@@ -15,3 +15,16 @@
   class Bar2 {}
   // foo.java 编译后输出 3 个 class 文件，分别是 Foo.class、Bar1.class 和 Bar2.class
   ```
+  
+  
+- #### Java 中基本类型的默认值
+  ```java
+  byte(位)          0
+  short(短整数)     0
+  int(整数)         0
+  long(长整数)      0
+  float(单精度)     0.0
+  double(双精度)    0.0
+  char(字符)        空
+  boolean           flase
+  ```
