@@ -33,6 +33,8 @@
   DATE_FORMAT(now(), '%Y-%m-%d')
   /* 当前时间的 18:48:12 格式 */
   DATE_FORMAT(NOW(),'%H:%i:%s')
+  /* 当前时间的 18:48:12.258 格式 */
+  DATE_FORMAT(NOW(),'%H:%i:%s.%f')
   ```
 
 
