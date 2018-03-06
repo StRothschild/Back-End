@@ -1,7 +1,7 @@
 ## SpringBoot
 
 #### SpringBoot 热部署
-##### 通过
+##### 参考 http://tengj.top/2017/06/01/springboot10/
 
 
 ```xml
