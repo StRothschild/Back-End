@@ -46,9 +46,30 @@
 - #### IF 函数语法
   ##### MySQL 中的 IF 函数类似于 二元表达式
   ```SQL
-  IF(a IS NULL, 0, a) ==> 如果表格式的结果为true，则返回 0，否则返回 a 
+  IF(a IS NULL, 0, a) ==> 如果表格式的结果为true，则返回 0，否则返回 a
   ```
 
+
+
+
+
+
+
+---
+- #### MySQL 特有的防重复插入
+  ```
+  /* ON DUPLICATE KEY UPDATE */
+  INSERT INTO
+  recsys.video_vulgarity_check (id, title, currentTime)
+  VALUES ('foo', 'title', now())
+  ON DUPLICATE KEY UPDATE
+  title = VALUES(title),
+  currentTime = VALUES(currentTime);
+
+  /* 如果插入过程中 id/title/currentTime 有一个或多个字段是 Primary Key 或者是 UNIQ。则当执行
+  INSERT 操作时出现字段重复，则会改为执行 ON DUPLICATE KEY 之后的语句。
+  本例中就是 UPDATE title = VALUES(title),currentTime = VALUES(currentTime); */
+  ```
 
 
 
