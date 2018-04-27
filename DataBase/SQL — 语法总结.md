@@ -1,4 +1,12 @@
-## SQL 语法总计
+## SQL 语法总结
+- #### 转义
+  ##### 如果数据库中的字段名和保留字冲突则使用（\`）撇号来进行转义
+  ```SQL
+  SELECT bar FROM foo;          // 正常 SQL 语句
+  SELECT `from` FROM foo;       // from 是 SQL 中的保留字段，需要转义
+  ```
+
+---
 - #### COUNT
   ##### COUNT(column_name) 函数返回指定列的值的数目，但是不包含 null 值。
   ##### COUNT(*) 与 COUNT(1)包含 null 值。
@@ -9,8 +17,8 @@
 ---
 - #### LEFT JOIN ... ON ...
   ##### LEFT JOIN 关键字会从右表那里返回和左表相同行数的所有列，并合入左表中。注意，如果某行的 on 条件不符合，则右表返回的值均为 null。
-  ##### LEFT JOIN 对性能的消耗较大
-  ```SQL
+  ##### LEFT JOIN 对性能的消耗较大
+  ```SQL
   SELECT *
   FROM RightTable r
   LEFT JOIN LeftTable l ON r.Id = l.Id;
