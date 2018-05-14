@@ -33,9 +33,9 @@
   /* 当前时间的 2018-02-27 格式 */
   DATE_FORMAT(now(), '%Y-%m-%d')
   /* 当前时间的 18:48:12 格式 */
-  DATE_FORMAT(NOW(),'%H:%i:%s')
+  DATE_FORMAT(NOW(), '%H:%i:%s')
   /* 当前时间的 18:48:12.258 格式 */
-  DATE_FORMAT(NOW(),'%H:%i:%s.%f')
+  DATE_FORMAT(NOW(), '%H:%i:%s.%f')
   ```
 
 
@@ -48,6 +48,50 @@
   ```SQL
   IF(a IS NULL, 0, a) ==> 如果表格式的结果为true，则返回 0，否则返回 a
   ```
+
+
+
+
+
+
+
+
+---
+- #### LENGTH 函数语法
+  #####  MySQL 中的 LENGTH 函数相当与 SQL 中的 LEN 函数，用于判断 字段 内容的长度
+  ```MySQL
+  // 获取 foo 字段的长度
+  SELECT LENGTH(foo) FROM bar;                     
+
+  // 获取 foo 字段 并按 foo 字段的长度排序
+  SELECT foo FROM bar ORDER BY LENGTH(foo) DESC;
+  ```
+
+
+
+
+
+
+
+
+
+
+---
+- #### LENGTH 函数语法
+  #####  MySQL 中的 LENGTH 函数相当与 SQL 中的 LEN 函数，用于判断 字段 内容的长度
+  ```MySQL
+  // 获取 foo 字段的长度
+  SELECT LENGTH(foo) FROM bar;                     
+
+  // 获取 foo 字段 并按 foo 字段的长度排序
+  SELECT foo FROM bar ORDER BY LENGTH(foo) DESC;
+
+  // LENGTH 在识别汉字时会返回 3 个字符, 而 CHAR_LENGTH 不会
+  SELECT LENGTH('汉字t');        => 7
+  SELECT CHAR_LENGTH('汉字t');   => 3
+  ```
+
+
 
 
 
