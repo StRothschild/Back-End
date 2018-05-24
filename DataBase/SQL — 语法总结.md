@@ -4,9 +4,28 @@
   ```SQL
   SELECT bar FROM foo;          // 正常 SQL 语句
   SELECT `from` FROM foo;       // from 是 SQL 中的保留字段，需要转义
-  
+
   SELECT 'from' FROM foo;       // 注意与单引号的区别，此处使用单引号表明是普通字符串，返回结果是 'from'
 ```
+
+
+
+
+---
+- #### default
+  ##### 不加 not null default 都是 default null
+  ```SQL
+  // a、b 的默认值都是 null， c 的默认值为 'test'
+  create table `foo`
+  (  
+    `a` varchar(255),
+    `b` varchar(255) DEFAULT NULL,
+    `c` varchar(255) NOT NULL default 'test'
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+  ```
+
+
+
 
 ---
 - #### COUNT
