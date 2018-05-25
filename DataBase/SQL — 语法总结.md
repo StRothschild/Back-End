@@ -5,8 +5,8 @@
   SELECT bar FROM foo;          // 正常 SQL 语句
   SELECT `from` FROM foo;       // from 是 SQL 中的保留字段，需要转义
 
-  SELECT 'from' FROM foo;       // 注意与单引号的区别，此处使用单引号表明是普通字符串，返回结果是 'from'
-```
+  SELECT 'from' FROM foo;       // 注意与单引号的区别，此处使用单引号表明是普通字符串，返回结果是 'from'
+  ```
 
 
 
@@ -33,6 +33,17 @@
   ##### COUNT(*) 与 COUNT(1)包含 null 值。
   ##### 通常情况下 COUNT(*) 会扫描所有列，而 COUNT(1)只扫描第一列，所以一般 COUNT(1) 的效率高。
 
+
+
+
+---
+- #### INNER JOIN ... ON ...
+  ##### INNER JOIN 可以直接简写成 JOIN
+  ```SQL
+  SELECT *
+  FROM foo f
+  JOIN bar b ON f.Id = b.Id;
+  ```
 
 
 ---
