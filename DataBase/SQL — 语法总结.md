@@ -39,6 +39,7 @@
 ---
 - #### INNER JOIN ... ON ...
   ##### INNER JOIN 可以直接简写成 JOIN
+  ##### INNER JOIN 不会以某张表为基准，只要匹配的规则都会返回。
   ```SQL
   SELECT *
   FROM foo f
