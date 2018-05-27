@@ -12,7 +12,7 @@
 
 
 ---
-- #### default
+- #### DEFUALT
   ##### 不加 not null default 都是 default null
   ```SQL
   // a、b 的默认值都是 null， c 的默认值为 'test'
@@ -20,7 +20,7 @@
   (  
     `a` varchar(255),
     `b` varchar(255) DEFAULT NULL,
-    `c` varchar(255) NOT NULL default 'test'
+    `c` varchar(255) NOT NULL DEFULT 'test'
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8
   ```
 
@@ -39,7 +39,7 @@
 ---
 - #### INNER JOIN ... ON ...
   ##### INNER JOIN 可以直接简写成 JOIN
-  ##### INNER JOIN 不会以某张表为基准，只要匹配的规则都会返回。
+  ##### INNER JOIN 不会以某张表为基准，只要匹配的规则都会被返回。
   ```SQL
   SELECT *
   FROM foo f
