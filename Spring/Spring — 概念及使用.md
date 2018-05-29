@@ -1,4 +1,4 @@
-## Spring 的配置
+## Spring 的概念及使用
 
 ---
 - #### 配置文件中的通配符 *
@@ -11,3 +11,10 @@
 // 两个 ** 可以同时匹配路径下的所有文件和目录，例如 /resources/folder 和 /resources/test.html
 <mvc:resources mapping="/resources/**" location="/resources/" />
 ```
+
+
+
+---
+- #### @schedule
+
+
