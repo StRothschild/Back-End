@@ -2,7 +2,7 @@
 
 ---
 - #### Linux 中的引号
-  ##### shell 中引文的叫法不同，双引号叫 soft quote，单引号叫 hard quote。
+  ##### 在 shell 中双引号叫 soft quote，单引号叫 hard quote。
   ##### 双引号中的变量依然会被解析，而单引号会将所有内容解释成字符串。
   ```
   // 定义变量 name
