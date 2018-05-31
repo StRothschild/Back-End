@@ -1,6 +1,28 @@
 ## Linux 命令总结
 
 ---
+- #### Linux 中的引号
+  ##### shell 中引文的叫法不同，双引号叫 soft quote，单引号叫 hard quote。
+  ##### 双引号中的变量依然会被解析，而单引号会将所有内容解释成字符串。
+  ```
+  // 定义变量 name
+  [root@linux ~]# name = foo
+  [root@linux ~]# echo $name
+  foo
+
+  // 使用双引号
+  [root@linux ~]# echo "$name"  
+  foo
+
+  // 使用单引号
+  [root@linux ~]# echo '$name'
+  $name
+  ```
+
+
+
+
+---
 - #### 查看文件内容
   ##### cat filePath
   ```
