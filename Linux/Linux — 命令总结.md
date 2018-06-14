@@ -1,5 +1,11 @@
 ## Linux 命令总结
 
+
+- #### 用户权限
+  ##### sudo
+  
+  
+  
 ---
 - #### Linux 中的引号
   ##### 在 shell 中双引号叫 soft quote，单引号叫 hard quote。
