@@ -1,13 +1,18 @@
-## Linux 命令总结
+## Linux 基本概念和操作
 > Linux 是源于 UNIX 的一种 UNIX-LIKE 系统
+
+
+---
+- #### 文件系统
+  ##### windows 系统的文件系统是FAT32/NTFS，而Linux 系统的是 EXT4。两者不兼容，不能互相识别对方类型的数据。
 
 
 ---
 - #### 用户权限
   ##### sudo
-  
-  
-  
+
+
+
 ---
 - #### Linux 中的引号
   ##### 在 shell 中双引号叫 soft quote，单引号叫 hard quote。
@@ -130,19 +135,18 @@
   ```
     netstat -apn | grep portNo     // 返回端口的使用情况
   ```
-  
-  
-  
-  
+
+
+
+
 ---
 - #### ping
   ```
-   /* 只能用域名或IP */ 
+   /* 只能用域名或IP */
    ping www.163.com      
    ping 10.160.18.44  
 
-   /* 不可以跟上协议和端口 */ 
+   /* 不可以跟上协议和端口 */
    ping http://www.163.com    // 报错
    ping 10.160.18.44:8080     // 报错
   ```
-
