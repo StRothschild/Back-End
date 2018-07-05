@@ -32,6 +32,27 @@
   ##### COUNT(column_name) 函数返回指定列的值的数目，但是不包含 null 值。
   ##### COUNT(*) 与 COUNT(1)包含 null 值。
   ##### 通常情况下 COUNT(*) 会扫描所有列，而 COUNT(1)只扫描第一列，所以一般 COUNT(1) 的效率高。
+  ##### 注意 COUNT 在与 GROUP BY 联用时，COUNT 的结果是每一条 GROUP BY 结果内的数据条数，而不是 GROUP BY 后返回的所有结果条数。
+  ```SQL
+  +-----+-----+
+   | id | num
+  +-----+-----+
+   | 1 | 8 |
+   | 1 | 8 |
+   | 1 | 8 |
+   | 32 | 8 |
+   | 32 | 8 |
+   | 32 | 8 |
+   | 32 | 8 |
+
+   SELECT count(*) FROM table GROUP BY id;
+
+   +------------+
+   | count(*) |
+   +-----------+
+   | 3 |
+   | 4 |  
+  ```
 
 
 
