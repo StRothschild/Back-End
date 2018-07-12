@@ -37,3 +37,9 @@
   ==
   ===
   ```
+
+
+
+
+- #### FileReader 和 FileInputStream
+  ##### FileReader 用于读取字符数据，FileInputStream 用于读取二进制数据。
