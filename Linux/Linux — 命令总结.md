@@ -14,6 +14,15 @@
 
 
 ---
+- #### 清屏
+  ##### Linux 下使用 clear (本质是翻页，向上翻依然存在记录)
+  ##### Windows 下使用 cls
+  ```
+  [root@linux ~]# clear
+  ```
+
+
+---
 - #### Linux 中的引号
   ##### 在 shell 中双引号叫 soft quote，单引号叫 hard quote。
   ##### 双引号中的变量依然会被解析，而单引号会将所有内容解释成字符串。
