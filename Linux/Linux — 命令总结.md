@@ -60,6 +60,20 @@
 
 
 
+--- 
+- #### 文本查找
+  ```
+  // 从 fileName 文件中过滤出带有关键词 'keyWords' 的记录，从上往下显示
+  grep 'keyWords' filePath/fileName | head
+
+  ```
+
+
+
+
+
+
+
 ---
 - #### vim 浏览文件翻页
   ```
