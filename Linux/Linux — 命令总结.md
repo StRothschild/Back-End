@@ -9,7 +9,7 @@
 
 ---
 - #### 用户权限
-  ##### sudo
+  ##### sudo (Superuser Do)
 
 
 
