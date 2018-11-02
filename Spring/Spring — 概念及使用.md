@@ -1,5 +1,13 @@
 ## Spring 的概念及使用
 
+
+—--
+- 依赖注入(Dependency Injection)
+- 控制反转(Inversion of Control)
+
+
+
+
 ---
 - #### 配置文件中的通配符 *
   ```javascript
