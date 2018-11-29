@@ -1,6 +1,6 @@
 # Java 的零杂知识点
 
-- #### Java 判空
+- #### Java 判空技巧
   ```java
   /* 判断是否为空字符串 */
   "".equals(foo)    // "" 写前面可以避免 foo 为 null 时出现的 bug
