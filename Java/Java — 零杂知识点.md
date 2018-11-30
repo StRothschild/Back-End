@@ -21,3 +21,7 @@
 - #### FastJSON
   ##### JSONObject.parse() 与 JSONObject.parseObject() 不同。前者返回 Object 对象，后者返回一个 JSONObject 对象。
   
+  
+  
+- #### swicth
+  ##### 对于 enumerate 类型的数据。case 后面不用跟类型。
