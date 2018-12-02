@@ -1,7 +1,6 @@
 ## Spring 的概念及使用
 
-
-—--
+---
 - 依赖注入(Dependency Injection)
 - 控制反转(Inversion of Control)
 
@@ -21,6 +20,11 @@
   ```
 
 
+---
+- #### @Autowired
+  ##### 如果类是通过 new 方法实例化，而不是通过 @Autowired 方法实例化的。那么其这个类内部自身所包含的，通过 @Autowired 注入的类不会被实例化，会是 null。
+  
+  
 
 ---
 - #### @schedule
@@ -28,7 +32,7 @@
   ```java
   @Scheduled (cron="0/5 * * * * ?")   // 每5秒执行一次 
   @Scheduled (cron="0 0/30 9-17 * * ?")   //朝九晚五工作时间内每半小时
-   @Scheduled (cron="0 15 10 ? * MON-FRI")   //周一至周五的上午10:15触发 
+  @Scheduled (cron="0 15 10 ? * MON-FRI")   //周一至周五的上午10:15触发 
       
   * 字符代表所有可能的值
   / 字符用来指定数值的增量 比如 "0/15" 表示从第 0 分钟开始，每 15 分钟
