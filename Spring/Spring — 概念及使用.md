@@ -6,6 +6,16 @@
 
 
 
+---
+- #### web.xml 中配置 SpringMVC
+  ```xml
+  <context-param>  
+      <param-name>contextConfigLocation</param-name>  
+      <param-value>/WEB-INF/spring-config.xml</param-value>  
+  </context-param>
+  ```
+  
+  
 
 ---
 - #### 配置文件中的通配符 *
