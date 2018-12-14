@@ -9,6 +9,7 @@
 ---
 - #### web.xml 中配置 SpringMVC
   ```xml
+  <--! 要读入的配置文件的位置 -->
   <context-param>  
       <param-name>contextConfigLocation</param-name>  
       <param-value>/WEB-INF/spring-config.xml</param-value>  
