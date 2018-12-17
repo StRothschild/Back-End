@@ -25,3 +25,8 @@
   
 - #### swicth
   ##### 对于 enumerate 类型的数据。case 后面不用跟类型。
+
+
+  
+- #### Factory
+  ##### 工厂方法
