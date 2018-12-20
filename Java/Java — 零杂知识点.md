@@ -9,7 +9,7 @@
   null == foo 或 foo == null  // 建议用前者，万一少写一个等于号时，前者会报错，可以及时发现
   ```
 
-
+---
 - #### 中间件（Middleware）
   ##### 中间件的概念是一种将具体业务和技术实现解耦的组件。通过中间件可以屏蔽底层复杂的技术逻辑（可能由多种技术和服务的聚合来实现），并提供统一的接口来提供特定的服务。
   ##### 数据库中间件作用举例：提供以单表操作的方式来实现底层的多库多表分布式数据系统操作的服务。
@@ -17,17 +17,32 @@
   
   
   
-
+---
 - #### FastJSON
   ##### JSONObject.parse() 与 JSONObject.parseObject() 不同。前者返回 Object 对象，后者返回一个 JSONObject 对象。
   
   
-  
+
+---
 - #### swicth
-  ##### 对于 enumerate 类型的数据。case 后面不用跟类型。
+    ##### switch 支持的变量类型只有 int、short、char、byte 和 enum。
+    ##### 对于 enumerate 类型的数据。case 后面不用跟具体类名。
+     ```java
+    switch(int、short、char、byte、enum){
+    case int、short、char、byte、enum:
+        // do something
+        break;
+    ```
+
+---
+- #### Java 保留两位小数
+    ```java
+    // 将 target 保留2位小数
+    Double result = (double)Math.round(target * 10000)/100
+    ```
 
 
-  
+---
 - #### Factory
   ##### 工厂方法
     1.简单工厂模式
