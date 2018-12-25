@@ -125,3 +125,11 @@
   FROM A a
   ORDER BY a.Id;
   ```
+  
+  
+---
+- #### MAX()
+  ##### MAX 函数返回一列中的最大值。NULL 值不包括在计算中。
+  ```SQL
+  SELECT MAX(columnName) FROM tableName
+  ```
