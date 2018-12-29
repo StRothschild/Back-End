@@ -23,8 +23,8 @@
   short(短整数)      0
   int(整数)          0
   long(长整数)       0
-  float(单精度)     0.0
-  double(双精度)    0.0
+  float(单精度)      0.0
+  double(双精度)     0.0
   char(字符)        空
   boolean          flase
   ```
