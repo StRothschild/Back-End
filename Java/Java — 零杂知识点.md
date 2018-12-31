@@ -25,14 +25,14 @@
 
 ---
 - #### swicth
-    ##### switch 支持的变量类型只有 int、short、char、byte 和 enum。
-    ##### 对于 enumerate 类型的数据。case 后面不用跟具体类名。
-     ```java
-    switch(int、short、char、byte、enum){
-    case int、short、char、byte、enum:
-        // do something
-        break;
-    ```
+   ##### switch 支持的变量类型只有 int、short、char、byte 和 enum。
+   ##### 对于 enumerate 类型的数据。case 后面不用跟具体类名。
+   ```java
+   switch(int、short、char、byte、enum){
+   case int、short、char、byte、enum:
+      // do something
+   break;
+   ```
 
 ---
 - #### Java 保留两位小数
