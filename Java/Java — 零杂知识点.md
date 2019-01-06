@@ -55,4 +55,8 @@
 ---
 - #### Java8 中的 lambda 表达式
   ##### forEach
+    ```java
+    // forEach 内的回调函数只能设置 final 类型的变量，或者是 effectivly final 的类型。
+
+    ```
     
