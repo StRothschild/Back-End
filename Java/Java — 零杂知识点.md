@@ -38,7 +38,7 @@
 - #### Java 保留两位小数
     ```java
     // 将 target 保留2位小数
-    Double result = (double)Math.round(target * 10000)/100
+    Double result = (double)Math.round(target * 100)/100
     ```
 
 
