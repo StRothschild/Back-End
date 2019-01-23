@@ -28,4 +28,4 @@
 
   - ##### 环境变量 PATH 的作用就是指定命令的搜索路径。为了使得 Java 的命令执行程序可以被找到，需要在 PATH 变量的值中添加 "%JAVA_HOME%\bin;"  因为包括 javac 命令的执行程序 javac.exe 在内的以及其他的一些 Java 命令执行程序都放在 bin 目录下。
 
-  - ##### 环境变量 CLASSPATH 的作用就是指定类的搜索路径。要使用类（class），就需要配置 CLASSPATH 来指定查找的目录。如果 CLASSPATH 没有配置，Java 会在默认在"当前路径"查找，如果设置了 CLASSPATH 则会按照 CLASSPATH 值来寻找。所以在 CLASSPATH 变量的值中添加 ".;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;" 其中的 "dt.jar" 和 "tools.jar" 都是第三方的类库，而第一个点代表了是"当前路径"，非常重要，不能漏掉。
+  - ##### 环境变量 CLASSPATH 的作用就是指定类的搜索路径。要使用类（class），就需要配置 CLASSPATH 来指定查找的目录。如果 CLASSPATH 没有配置，Java 会在默认在"当前路径"查找，如果设置了 CLASSPATH 则会按照 CLASSPATH 值来寻找。所以在 CLASSPATH 变量的值中添加 ".;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;" 其中的 "dt.jar" 和 "tools.jar" 都是第三方的类库，而第一个点代表了是"当前路径"，非常重要，不能漏掉。在 jdk1.5 之后的版本可以不用再配置Classpath。
