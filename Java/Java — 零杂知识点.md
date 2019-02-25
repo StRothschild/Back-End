@@ -57,6 +57,12 @@
   ##### forEach
     ```java
     // forEach 内的回调函数只能设置 final 类型的变量，或者是 effectivly final 的类型（Java8会在编译时自动加上final）。
-
     ```
     
+
+
+---
+- #### 异步
+  ##### 
+    ```java
+    ```
