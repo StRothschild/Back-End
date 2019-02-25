@@ -15,4 +15,12 @@ public class TestTask {
         System.out.println("out");
     }
 }
+
+
+
+public class CallableTask implements Callable<String> {
+    public String call() {
+        return "result of CallableTask!";
+    }
+}
 、、、
