@@ -1,0 +1,18 @@
+、、、java
+public class TestTask {
+    public static void main(String[] args) {
+        ExecutorService exec = Executors.newCachedThreadPool();  //工头
+        Future<String> result = exec.submit(new CallableTask());  //submit返回一个Future，代表了即将要返回的结果
+
+        System.out.println("in");
+            try {
+                if (result.isDone()) {
+                    System.out.println(result.get());
+                }
+            } catch (Exception e) {
+                System.out.println(e.toString());
+            }
+        System.out.println("out");
+    }
+}
+、、、
