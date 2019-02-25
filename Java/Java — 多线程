@@ -1,5 +1,5 @@
-、、、java
-public class TestTask {
+```java
+public class TestCallable {
     public static void main(String[] args) {
         ExecutorService exec = Executors.newCachedThreadPool();  //工头
         Future<String> result = exec.submit(new CallableTask());  //submit返回一个Future，代表了即将要返回的结果
@@ -17,10 +17,10 @@ public class TestTask {
 }
 
 
-
+// 实现 Callable 接口
 public class CallableTask implements Callable<String> {
     public String call() {
         return "result of CallableTask!";
     }
 }
-、、、
+```
