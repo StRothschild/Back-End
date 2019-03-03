@@ -42,6 +42,16 @@
     ```
 
 
+
+---
+- #### Java 父类强制向下转型
+    ```java
+    // 将 target 保留2位小数
+    Double result = (double)Math.round(target * 100)/100
+    ```
+    
+    
+
 ---
 - #### Factory
   ##### 工厂方法
