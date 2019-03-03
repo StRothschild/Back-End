@@ -46,8 +46,12 @@
 ---
 - #### Java 父类强制向下转型
     ```java
-    // 将 target 保留2位小数
-    Double result = (double)Math.round(target * 100)/100
+    // 当父类无法强制向下转型时，可以用 JSONObject 
+    public static void main(String[] args) {
+        Father father = new Father();
+        String ob = JSONObject.toJSONString(father);
+        Son son = JSONObject.parseObject(ob, Son.class);
+    }
     ```
     
     
