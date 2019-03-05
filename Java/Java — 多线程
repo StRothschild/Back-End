@@ -9,11 +9,11 @@ public class TestCallable {
              Thead.sleep(1000);
             // 1秒后主线程继续执行
               if (result.isDone()) {
-                    System.out.println(result.get());
-                }
-            } catch (Exception e) {
-                System.out.println(e.toString());
-            }
+                  System.out.println(result.get());
+              }
+         } catch (Exception e) {
+              System.out.println(e.toString());
+         }
         
     }
 }
