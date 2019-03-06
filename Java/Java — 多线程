@@ -6,7 +6,7 @@ public class TestCallable {
 
         try {
             // 主线程挂起1秒,期间Callable子线程会继续执行
-             Thead.sleep(1000);
+            Thead.sleep(1000);
             // 1秒后主线程继续执行
               if (result.isDone()) {
                   System.out.println(result.get());
