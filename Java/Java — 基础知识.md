@@ -46,4 +46,6 @@
   
   
 - #### Java8 中的 forEach、filter、map
-  ##### Collection类stream(）
+  ##### 用 stream 方法可以获取当前 Collection 对象的流对象，结合 lambda 表达式，可以联合 forEach、filter、map 方法一起使用。
+
+- #### Java8 中的 forEach、filter、map
