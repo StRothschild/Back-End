@@ -76,7 +76,5 @@
 
 
 ---
-- #### 异步
-  ##### 
-    ```java
-    ```
+- #### fastJson
+  ##### JSONObject jsonObject=JSON.parseObject(result); 
