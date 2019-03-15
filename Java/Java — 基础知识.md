@@ -45,7 +45,13 @@
   ##### FileReader 用于读取字符数据，FileInputStream 用于读取二进制数据。
   
   
+  
+  
 - #### Java8 中的 forEach、filter、map
   ##### 用 stream 方法可以获取当前 Collection 对象的流对象，结合 lambda 表达式，可以联合 forEach、filter、map 方法一起使用。
 
-- #### Java8 中的 forEach、filter、map
+
+
+
+- #### super
+##### 子类中的执行 super 方法可以调用执行父类的构造函数。
