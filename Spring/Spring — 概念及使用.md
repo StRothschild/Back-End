@@ -9,9 +9,22 @@
 ---
 - #### Spring + IDEA 起步流程
   ##### 1. 下载并安装 Tomcat
-  ##### 2. 下载并安装 Maven(可以跳过，Idea 中内置了 Maven)
-  ##### 3. 在 IDEA 中创建一个 Maven 工程
-  ##### 4. 
+  ##### 2. 下载并安装 Maven（可以跳过，Idea 中内置了 Maven）
+  ##### 3. 在 IDEA 中创建一个 Maven 工程（如果创建 web 工程 archeType 可以选择 maven-archetype-webapp，其他类型工程可以选 maven-archetype-quickstart）
+  ##### 4. 配置 pom.xml 引入 Spring 及其他相关依赖
+  ##### 5. 
+
+
+
+
+---
+- #### SpringMVC 概念
+  ##### SpringMVC 是一个基于 DispatcherServlet 的MVC框架，DispatcherServlet 继承自HttpServlet。每一个 Request 都是由 DispatcherServlet 负责转发给相应的 Handler，Handler处理以后再返回相应的视图(View)和模型(Model)，返回的视图和模型都可以不指定，即可以只返回 Model 或只返回 View 或都不返回。
+
+
+
+
+
 
 
 
