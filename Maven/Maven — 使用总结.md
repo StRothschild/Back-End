@@ -5,25 +5,38 @@
 
 
 
+- #### Maven 命令
+  ```
+  mvn -v   // 查看版本
+  ``` 
+
+
+- #### Maven 的命名 
+  ##### Maven 通过 GroupId 、 ArtifactId 和 Version 三级标签来定义一个 Maven 工程（包）。
+
+  ##### GroupId 一般是公司或者组织名称的倒序，比如 com.netease.news
+  ##### ArtifactId 是指项目的名称，比如 SpringTest
+  ##### Version 值的是工程的版本
+  ##### 通过以上三个标签就可以定义出一个唯一的 Maven 工程，并实现 Maven 的依赖管理。
+
 
 
 
 ---
 - #### Maven 仓库的配置和生效顺序
-
-1.pom.xml里的repositories元素，里面可以包含多少repository(至少默认包含了中央仓库，仓库id为central，可以写个id为central的mirror或者repository覆盖默认的中央仓库，该仓库总是在effective-pom里repositories元素的最后一 个子元素),每个repository都有一个id(此id非常重要)，命令行执行：mvn help:effective-pom可以验证
-
-
-2.maven获取真正起作用的repository集合流程：首先会获取pom.xml里的repository集合，然后在settings.xml里找mirrors元素，如果repository的id和mirror的mirrorOf的值相同，则该mirror替代该repository，如果该repository找不到对应的mirror，则使用其本身，依此可以得到最终起作用的repository集合
+  1. pom.xml里的repositories元素，里面可以包含多少repository(至少默认包含了中央仓库，仓库id为central，可以写个id为central的mirror或者repository覆盖默认的中央仓库，该仓库总是在effective-pom里repositories元素的最后一 个子元素),每个repository都有一个id(此id非常重要)，命令行执行：mvn help:effective-pom可以验证
 
 
-3.关于maven如何查找pom.xml里dependencies里配置的插件，暂且不考虑本地仓库的存在（笔者注：应该是先查找本地的仓库，如果本地仓库查找不到，再通过repository里面配置的仓库进行查找），maven会根据最终的repository集合里依次查找，如果查到了就从该仓库下载，并且停止对后续repository的查找(找到了就停)。所以可以看出用户在pom.xml里配置repository时，repository的顺序还是挺重要的。
+  2. maven获取真正起作用的repository集合流程：首先会获取pom.xml里的repository集合，然后在settings.xml里找mirrors元素，如果repository的id和mirror的mirrorOf的值相同，则该mirror替代该repository，如果该repository找不到对应的mirror，则使用其本身，依此可以得到最终起作用的repository集合
 
 
-4.注：从超级父pom里继承来的中央repository在effective-pom里总是为最后一个repository.
+  3. 关于maven如何查找pom.xml里dependencies里配置的插件，暂且不考虑本地仓库的存在（笔者注：应该是先查找本地的仓库，如果本地仓库查找不到，再通过repository里面配置的仓库进行查找），maven会根据最终的repository集合里依次查找，如果查到了就从该仓库下载，并且停止对后续repository的查找(找到了就停)。所以可以看出用户在pom.xml里配置repository时，repository的顺序还是挺重要的。
 
-5.对于寻找reposiotry的mirror的一些理解：
-在settings.xml里配置mirror里，应该将<mirrorOf></mirrorOf>放在最后一个最好这么做
+
+  4. 注：从超级父pom里继承来的中央repository在effective-pom里总是为最后一个repository.
+
+  5. 对于寻找reposiotry的mirror的一些理解：
+  在settings.xml里配置mirror里，应该将<mirrorOf></mirrorOf>放在最后一个最好这么做
 
 
 

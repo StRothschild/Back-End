@@ -9,7 +9,9 @@
 ---
 - #### Spring + IDEA 起步流程
   ##### 1. 下载并安装 Tomcat
-  
+  ##### 2. 下载并安装 Maven(可以跳过，Idea 中内置了 Maven)
+  ##### 3. 在 IDEA 中创建一个 Maven 工程
+  ##### 4. 
 
 
 
