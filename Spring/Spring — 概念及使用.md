@@ -16,6 +16,22 @@
 
 
 
+
+---
+- #### Spring Bean
+  ##### Spring Bean 是被实例化的，被 Spring 容器管理的 Java 对象。
+  ##### 1. Bean 配置信息定义了 Bean 的实现及依赖关系。
+  ##### 2. Spring 容器根据各种形式的 Bean 配置信息在容器内部建立Bean定义注册表，然后根据注册表加载、实例化 Bean，并建立 Bean 之间的依赖关系。
+  ##### 3. 最后将这些准备就绪的Bean 放到 Bean 缓存池中，以供外层的应用程序进行调用。
+  
+  https://www.cnblogs.com/wuchanming/p/5426746.html
+
+---
+-  #### Spring Bean 的三种配置方案
+  || XML | 注解 |
+  |--|--|--|--|
+
+
 ---
 - #### SpringMVC 概念
   ##### SpringMVC 是一个基于 DispatcherServlet 的MVC框架，DispatcherServlet 继承自HttpServlet。每一个 Request 都是由 DispatcherServlet 负责转发给相应的 Handler，Handler处理以后再返回相应的视图(View)和模型(Model)，返回的视图和模型都可以不指定，即可以只返回 Model 或只返回 View 或都不返回。
