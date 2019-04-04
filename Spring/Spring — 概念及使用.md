@@ -32,14 +32,19 @@
   |--|--|--|--|
 
 
+
+
 ---
 - #### SpringMVC 概念
   ##### SpringMVC 是一个基于 DispatcherServlet 的MVC框架，DispatcherServlet 继承自HttpServlet。每一个 Request 都是由 DispatcherServlet 负责转发给相应的 Handler，Handler处理以后再返回相应的视图(View)和模型(Model)，返回的视图和模型都可以不指定，即可以只返回 Model 或只返回 View 或都不返回。
 
 
 
-
-
+---
+- #### SpringMVC 中 @ResponseBody 返回 String 类型时中文乱码
+  ##### @ResponseBody 注解的实现类是 org.springframework.http.converter.StringHttpMessageConverter, 其默认字符集为 ISO-8859-1。
+  ##### 解决方案1：返回 json
+  ##### 解决方案2：增加字符编码的注解 @RequestMapping(value="",produces="text/html;charset=UTF-8") 
 
 
 
