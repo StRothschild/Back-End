@@ -26,11 +26,13 @@
   
   https://www.cnblogs.com/wuchanming/p/5426746.html
 
+
+
 ---
 -  #### Spring Bean 的三种配置方案
   || XML | 注解 | 代码
   |--|--|--|--|
-  |--|\<bean>|@Component|--|
+  |--| \<bean> | @Component / @Controller / @Service / @Repository |--|
 
 
 
