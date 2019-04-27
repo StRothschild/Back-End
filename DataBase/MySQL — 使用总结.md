@@ -121,7 +121,7 @@
 ---
 - #### Linux 中的数据库操作
   ```
-    mysql -h主机地址 -P端口 -u用户名 -p密码     // 连接 MySQL
+    mysql -h 主机地址 -P 端口 -u 用户名 -p 密码     // 连接 MySQL
 
     exit + 回车                               // 退出 MySQL
   ```
