@@ -17,7 +17,7 @@
   ```
 
 
-- #### Java 中基本类型的默认值
+- #### Java 中各个类型的默认值
   ```java
   byte(位)          0
   short(短整数)      0
@@ -27,6 +27,7 @@
   double(双精度)     0.0
   char(字符)        空
   boolean          flase
+  对象              null
   ```
 
 
