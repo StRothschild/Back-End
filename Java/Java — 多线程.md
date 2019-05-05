@@ -3,7 +3,7 @@
 ```java
 public class TestCallable {
     public static void main(String[] args) {
-        ExecutorService exec = Executors.newCachedThreadPool();  //工头
+        ExecutorService exec = Executors.newCachedThreadPool();   //工头
         Future<String> result = exec.submit(new CallableTask());  //submit返回一个Future，代表了即将要返回的结果
         try {
             // 主线程挂起1秒,期间Callable子线程会继续执行
@@ -17,7 +17,6 @@ public class TestCallable {
          }
     }
 }
-
 
 // 实现 Callable 接口
 public class CallableTask implements Callable<String> {
