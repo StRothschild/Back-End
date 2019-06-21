@@ -9,7 +9,7 @@
 ---
 - #### Spring + IDEA 起步流程
   ##### 1. 下载并安装 Tomcat
-  ##### 2. 下载并安装 Maven（可以跳过，Idea 中内置了 Maven）
+  ##### 2. 下载并安装 Maven（可以跳过，IDEA 中内置了 Maven）
   ##### 3. 在 IDEA 中创建一个 Maven 工程（如果创建 web 工程 archeType 可以选择 maven-archetype-webapp，其他类型工程可以选 maven-archetype-quickstart）
   ##### 4. 配置 pom.xml 引入 Spring 及其他相关依赖
 
@@ -30,9 +30,9 @@
 
 ---
 -  #### Spring Bean 的三种配置方案
-  || XML | 注解 | 代码
-  |--|--|--|--|
-  |--| \<bean> | @Component / @Controller / @Service / @Repository |--|
+  | XML | 注解 | 代码
+  |--|--|--|
+  |\<bean> | @Component / @Controller / @Service / @Repository |--|
 
 
 
