@@ -78,3 +78,12 @@
 ---
 - #### fastJson
   ##### JSONObject jsonObject = JSON.parseObject(result); 
+  
+  
+  
+---
+- #### 缩进
+  ##### 缩进统一用 4 个空格，不要用 Tab 缩进。
+
+   ``` 4
+   ```
